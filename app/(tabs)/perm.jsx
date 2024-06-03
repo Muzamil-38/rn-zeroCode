@@ -1,12 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import ProductsScreen from "../../components/ProductScreen";
 
 const Perm = () => {
   return (
-    <View>
-      <Text>Perm</Text>
-    </View>
-  )
-}
+    <SafeAreaProvider>
+      <ProductsScreen />
+    </SafeAreaProvider>
+  );
+};
 
-export default Perm
+export default Perm;
